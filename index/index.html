@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1"><!--声明当前页面用chrome内核来渲染-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="赛乐，少年先锋报" /><!--关键字-->
+    <meta name="description" content="赛乐网" /><!--网站描述-->
+    <meta http-equiv="window-target" content="_top"/><!--强制页面在当前窗口以独立页面显示,防止页面被引用-->
+    <link rel="icon" type="../image/x-icon" href="../common/img/icon-title.png"><!--标题icon-->
+    <link rel="stylesheet" type="text/css" href="../common/css/common.css" /><!--公用样式-->
+    <link rel="stylesheet" type="text/css" href="../index/css/index.css" /><!--页面主CSS-->
+    <title>赛乐网-赛乐主页</title>
+    <script src="../common/js/jquery.js" type="text/javascript"></script><!--JQ库-->
+</head>
+<body>
+<div class="nav">
+    <div class="logo">
+        <a href="../index/index.html" title="赛乐网" target="_blank" rel="noopener norefferrer">
+            <img alt="赛乐网" src="../common/img/logo.png">
+        </a>
+    </div>
+    <div class="navManu"><ul></ul></div>
+    <div class="loginDiv">
+        <div class="login">
+            <a href="../login/login.html" target="_blank" rel="noopener norefferrer"><button class="loginActive">登录</button></a>
+            <a href="../login/register.html?&&regApi=1" target="_blank" rel="noopener norefferrer"><button>注册</button></a>
+        </div>
+        <div class="logined">
+            <div class="user_work">
+                <img src="../common/img/sanjiao.png">
+                <ul></ul>
+            </div>
+            <a href="javascript:void(0);" onclick="userImgClick()" class="user_img">
+                <img src="">
+                <span class="user_name"></span>
+            </a>
+            <a href="../personalCenter/center_contribute.html" class="contribute background_color" target="_blank" rel="noopener norefferrer">
+                <span>一键投稿</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="indexBanner" id="banner">
+    <script>
+        //设置banner高度
+        var banHeight = window.innerHeight-60;
+        $("#banner").css("height",banHeight);
+    </script>
+    <div class="banControl" id="banner_ul">
+        <span class="bcLeft" style="background-image: url('./img/zuo.png')"></span>
+        <span class="bcRight" style="background-image: url('./img/you.png')"></span>
+    </div>
+    <div id="banner_list">
+        <a href="javascript:void(0);" class="imgcover jtback" data-img="" title="" target="_blank" rel="noopener norefferrer" style="display:block;"></a>
+    </div>
+    <div class="news">
+        <div class="content">
+            <div class="news_dt">
+                <header>动态<a href="../news/news_list.html?&&newsType=5" target="_blank" rel="noopener norefferrer"><span>更多>></span></a></header>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title="" class="news_img"></a>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title=""><p></p></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="news_hd">
+                <header>最新活动<a href="../news/news_list.html?&&newsType=6" target="_blank" rel="noopener norefferrer"><span>更多>></span></a></header>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title="" class="news_img"></a>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title=""><p></p></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title="" class="news_img"></a>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title=""><p></p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="font_title">
+    <div class="font_cont">
+        <div class="ft_img"><img src="./img/duihui.png"></div>
+        <div class="ft_font">
+            <p class="ft_p1 font_color title_font">微队会展示</p>
+            <p class="ft_p2 wyt2">WEIDUIHUI</p>
+        </div>
+    </div>
+</div>
+<div class="duiHui content">
+    <ul class="duiHui_ul">
+        <li>
+            <div>
+                <div class="duiHui_img imgcover">
+                    <a href="javascript:void(0);" title="" class="imgpop" target="_blank" rel="noopener norefferrer">
+                        <img src="../audio/img/play.png">
+                    </a>
+                </div>
+                <a href="javascript:void(0);" title="" target="_blank" rel="noopener norefferrer"><p class="jtback"></p></a>
+                <span class="jtback"></span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div class="duiHui_img imgcover">
+                    <a href="javascript:void(0);" title="" class="imgpop" target="_blank" rel="noopener norefferrer">
+                        <img src="../audio/img/play.png">
+                    </a>
+                </div>
+                <a href="javascript:void(0);" title="" target="_blank" rel="noopener norefferrer"><p class="jtback"></p></a>
+                <span class="jtback"></span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div class="duiHui_img imgcover">
+                    <a href="javascript:void(0);" title="" class="imgpop" target="_blank" rel="noopener norefferrer">
+                        <img src="../audio/img/play.png">
+                    </a>
+                </div>
+                <a href="javascript:void(0);" title="" target="_blank" rel="noopener norefferrer"><p class="jtback"></p></a>
+                <span class="jtback"></span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div class="duiHui_img imgcover">
+                    <a href="javascript:void(0);" title="" class="imgpop" target="_blank" rel="noopener norefferrer">
+                        <img src="../audio/img/play.png">
+                    </a>
+                </div>
+                <a href="javascript:void(0);" title="" target="_blank" rel="noopener norefferrer"><p class="jtback"></p></a>
+                <span class="jtback"></span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="youths_outdiv" data-img="./img/youthsDiv.png">
+    <div class="font_title">
+        <div class="font_cont">
+            <div class="ft_img"><img src="./img/youths.png"></div>
+            <div class="ft_font">
+                <p class="ft_p1 font_color title_font">少先队活动课课例</p>
+                <p class="ft_p2 wyt2">SHAOXIANDUIKELI</p>
+            </div>
+        </div>
+    </div>
+    <div class="youthsDiv">
+        <div class="youths">
+            <div class="youths_left">
+                <ul>
+                    <li>
+                        <span class="youths_num">1</span>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer"><span class="youths_title jtback"></span></a>
+                        <span class="youths_school jtback"></span>
+                    </li>
+                    <li>
+                        <span class="youths_num">3</span>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer"><span class="youths_title jtback"></span></a>
+                        <span class="youths_school jtback"></span>
+                    </li>
+                    <li>
+                        <span class="youths_num">5</span>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer"><span class="youths_title jtback"></span></a>
+                        <span class="youths_school jtback"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="youths_right">
+                <ul>
+                    <li>
+                        <span class="youths_num">2</span>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer"><span class="youths_title jtback"></span></a>
+                        <span class="youths_school jtback"></span>
+                    </li>
+                    <li>
+                        <span class="youths_num">4</span>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer"><span class="youths_title jtback"></span></a>
+                        <span class="youths_school jtback"></span>
+                    </li>
+                    <li>
+                        <span class="youths_num">6</span>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer"><span class="youths_title jtback"></span></a>
+                        <span class="youths_school jtback"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="youths_more"><a href="../wisdomYoungPioneers/youngPioneerLesson.html?type=4" target="_blank" rel="noopener norefferrer"><span>更多>></span></a></div>
+    </div>
+</div>
+<div class="font_title">
+    <div class="font_cont">
+        <div class="ft_img"><img src="./img/yuedu.png"></div>
+        <div class="ft_font">
+            <p class="ft_p1 font_color title_font">阅读</p>
+            <p class="ft_p2 wyt2">YUEDU</p>
+        </div>
+    </div>
+</div>
+<div class="banner2">
+    <div class="bigpicPop">
+        <div class="bigpicShang">
+            <div class="bigLeft"><span style="background-image: url(./img/right2.png)"></span></div>
+            <div class="bigPicshow">
+                <ul>
+                    <li><span class="imgcover jtback" title=""></span></li>
+                    <li><span class="imgcover jtback" title=""></span></li>
+                    <li><span class="imgcover jtback" title=""></span></li>
+                    <li><span class="imgcover jtback" title=""></span></li>
+                    <li><span class="imgcover jtback" title=""></span></li>
+                    <li><span class="imgcover jtback" title=""></span></li>
+                    <li><span class="imgcover jtback" title=""></span></li>
+                </ul>
+            </div>
+            <div class="bigRight"><span style="background-image: url(./img/left2.png)"></span></div>
+        </div>
+    </div>
+    <div class="banner2_words">
+        <ul>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+        </ul>
+    </div>
+    <div class="banner2_details content">
+        <div class="banner2_details_left">
+            <div>
+                <a href="javascript:void(0);" title="" target="_blank" rel="noopener norefferrer" class="imgcover ba2left_img jtback"></a>
+            </div>
+            <div class="ba2left_det">
+                <a href="javascript:void(0);" class="ba2left_h2" target="_blank" rel="noopener norefferrer"><h2 class="font_color jtback"></h2></a>
+                <p class="ba2left_p jtback"></p>
+                <button id="tougao" class="background_color">我要投稿</button>
+                <p class="ba2left_span jtback"><span></span></p>
+            </div>
+        </div>
+        <div class="banner2_details_right">
+            <div class="ba2right_part1">
+                <div>
+                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer"><p class="font_color ba2right_p jtback"></p></a>
+                    <img src="./img/you2.png">
+                </div>
+                <div>
+                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer"><p class="font_color ba2right_p jtback"></p></a>
+                    <img src="./img/you2.png">
+                </div>
+            </div>
+            <div class="ba2right_part2">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title="" class="imgcover jtback">
+                            <p></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title="" class="imgcover jtback">
+                            <p></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title="" class="imgcover jtback">
+                            <p></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title="" class="imgcover jtback">
+                            <p></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="writer">
+    <div class="writerDiv">
+        <div class="writer_left jtback" id="zhenggao" data-img="./img/writer_left.png">
+            <p class="draft_title">征稿信息</p>
+            <ul class="draft_list">
+                <li>
+                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title="">
+                        <p class="draft_p jtbai"></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title="">
+                        <p class="draft_p jtbai"></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title="">
+                        <p class="draft_p jtbai"></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title="">
+                        <p class="draft_p jtbai"></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title="">
+                        <p class="draft_p jtbai"></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title="">
+                        <p class="draft_p jtbai"></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title="">
+                        <p class="draft_p jtbai"></p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="writer_right">
+            <div class="van_writer">
+                <p class="writer_title font_color">先锋小作家</p>
+                <ul>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="saile_writer">
+                <p class="writer_title font_color">赛乐写手</p>
+                <ul>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="writer_message">
+                            <div class="writer_head">
+                                <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="imgcover jtback" title=""></a>
+                            </div>
+                            <div class="writer_name">
+                                <p>
+                                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" class="jtback" title=""></a>
+                                </p>
+                                <span class="color_hui jtback"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="notice">
+    <div class="notice_div">
+        <div class="notice_left"><p>用稿通知</p></div>
+        <div class="notice_right">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title=""><p class="notice_works jtback"></p></a>
+                    <p class="notice_author jtback"></p>
+                    <p class="notice_edition jtback"></p>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title=""><p class="notice_works jtback"></p></a>
+                    <p class="notice_author jtback"></p>
+                    <p class="notice_edition jtback"></p>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title=""><p class="notice_works jtback"></p></a>
+                    <p class="notice_author jtback"></p>
+                    <p class="notice_edition jtback"></p>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" target="_blank" rel="noopener norefferrer" title=""><p class="notice_works jtback"></p></a>
+                    <p class="notice_author jtback"></p>
+                    <p class="notice_edition jtback"></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="child_part" data-img="./img/childs.png">
+    <div class="font_title">
+        <div class="font_cont">
+            <div class="ft_img"><img src="./img/child.png"></div>
+            <div class="ft_font">
+                <p class="ft_p1 font_color title_font">少儿视听</p>
+                <p class="ft_p2 wyt2">SHAOER</p>
+            </div>
+        </div>
+    </div>
+    <div class="child_div">
+        <ul>
+            <li>
+                <div class="imgcover">
+                    <a href="javascript:void(0);" class="imgpop" title="" target="_blank" rel="noopener norefferrer">
+                        <img src="../audio/img/play.png">
+                    </a>
+                </div>
+                <p class="jtback"><a href="javascript:void(0);" title="" target="_blank" rel="noopener norefferrer"></a></p>
+            </li>
+            <li>
+                <div class="imgcover">
+                    <a href="javascript:void(0);" class="imgpop" title="" target="_blank" rel="noopener norefferrer">
+                        <img src="../audio/img/music.png">
+                    </a>
+                </div>
+                <p class="jtback"><a href="javascript:void(0);" title="" target="_blank" rel="noopener norefferrer"></a></p>
+            </li>
+            <li>
+                <div class="imgcover">
+                    <a href="javascript:void(0);" class="imgpop" title="" target="_blank" rel="noopener norefferrer">
+                        <img src="../audio/img/play.png">
+                    </a>
+                </div>
+                <p class="jtback"><a href="javascript:void(0);" title="" target="_blank" rel="noopener norefferrer"></a></p>
+            </li>
+            <li>
+                <div class="imgcover">
+                    <a href="javascript:void(0);" class="imgpop" title="" target="_blank" rel="noopener norefferrer">
+                        <img src="../audio/img/music.png">
+                    </a>
+                </div>
+                <p class="jtback"><a href="javascript:void(0);" title="" target="_blank" rel="noopener norefferrer"></a></p>
+            </li>
+            <li>
+                <div class="imgcover">
+                    <a href="javascript:void(0);" class="imgpop" title="" target="_blank" rel="noopener norefferrer">
+                        <img src="../audio/img/play.png">
+                    </a>
+                </div>
+                <p class="jtback"><a href="javascript:void(0);" title="" target="_blank" rel="noopener norefferrer"></a></p>
+            </li>
+            <li>
+                <div class="imgcover">
+                    <a href="javascript:void(0);" class="imgpop" title="" target="_blank" rel="noopener norefferrer">
+                        <img src="../audio/img/music.png">
+                    </a>
+                </div>
+                <p class="jtback"><a href="javascript:void(0);" title="" target="_blank" rel="noopener norefferrer"></a></p>
+            </li>
+            <li>
+                <div class="imgcover">
+                    <a href="javascript:void(0);" class="imgpop" title="" target="_blank" rel="noopener norefferrer">
+                        <img src="../audio/img/play.png">
+                    </a>
+                </div>
+                <p class="jtback"><a href="javascript:void(0);" title="" target="_blank" rel="noopener norefferrer"></a></p>
+            </li>
+            <li>
+                <div class="imgcover">
+                    <a href="javascript:void(0);" class="imgpop" title="" target="_blank" rel="noopener norefferrer">
+                        <img src="../audio/img/music.png">
+                    </a>
+                </div>
+                <p class="jtback"><a href="javascript:void(0);" title="" target="_blank" rel="noopener norefferrer"></a></p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer_part1 background_color"></div>
+    <div class="footer_part2">
+        <div class="footer_left">
+            <ul>
+                <li>
+                    <span>© 2006-2015 saile.cc，all rights reserved</span>
+                </li>
+                <li>
+                    <span>新出网证（渝）字008号</span>
+                </li>
+                <li>
+                    <span>信息网络传播视听节目许可证 2210465号</span>
+                </li>
+                <li>
+                    <span>渝ICP备 10013666号</span>
+                </li>
+                <li>
+                    <span>渝ISP B2-20110021</span>
+                </li>
+                <li>
+                    <span>渝公网安备 50010502000062号 </span>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_right">
+            <img src="../common/img/erweima.png" alt="二维码">
+        </div>
+    </div>
+</div>
+<script src="../common/js/common.js" type="text/javascript"></script><!--公用JS-->
+<script src="./js/index.js" type="text/javascript"></script><!--页面主JS-->
+</body>
+</html>
