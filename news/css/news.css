@@ -1,0 +1,364 @@
+
+.list_cont{
+    background-color: #eee;
+    padding-top: 20px;
+    display: flex;
+    min-height: 1100px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.lc_left{
+    width: 900px;
+    box-sizing: border-box;
+    float: left;
+    padding: 20px;
+}
+.lc_right{
+    width: 300px;
+    box-sizing: border-box;
+    float: left;
+    padding-left: 60px;
+}
+.lc_right .title_div{
+    padding-top: 24px;
+    padding-bottom: 0;
+    height: 70px;
+}
+.remlist li{
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 0;
+}
+.remlist li span{
+    float: left;
+    display: block;
+}
+.ns_num{
+    font-size: 20px;
+    width: 20px;
+    height: 100%;
+}
+.ns_listTitle{
+    font-size: 16px;
+    width: 160px;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lc_left li{
+    display: flex;
+    border-bottom: 1px solid white;
+    padding: 30px 0;
+    height: 190px;
+    box-sizing: border-box;
+}
+.lc_img,.lc_info{
+    float: left;
+}
+.lc_info{
+    width: 670px;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+.lc_img{
+    width: 190px;
+    height: 130px;
+}
+.lc_img a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.lc_info h3{
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    text-overflow: ellipsis;
+}
+.lc_info span{
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+}
+.lc_info .lcp{
+    height: 60px;
+    line-height: 30px;
+    text-indent: 2rem;
+}
+.lcp img{
+    display: none;
+}
+.lc_left ul{
+    min-height: 900px;
+}
+.writing_list_pages {
+    text-align: center;
+    padding: 50px 0;
+}
+.writing_list_pages button {
+    color: white;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    outline: none;
+}
+.seshiting li{
+    padding: 10px 0;
+}
+.seshiting li div, .seshiting li div a {
+    height: 110px;
+    width: 200px;
+}
+.seshiting li p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
+    height: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+.sest_title{
+    margin-top: 40px;
+}
+.lc_left h1{
+    text-align: center;
+    min-height: 50px;
+    line-height: 50px;
+}
+.detail_span{
+    margin: 20px 0;
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+}
+.detail_cont{
+    min-height: 900px;
+}
+.detail_cont img{
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+}
+.detail_cont p,.detail_cont span{
+    line-height: 30px!important;
+    font-size: 16px!important;
+    text-align: left!important;
+    font-family: 微软雅黑!important;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    background: none!important;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.video_left p span{
+    float: right;
+    padding-right: 50px;
+    font-weight: normal;
+}
+.video_div{
+    width: 866px;
+    height: 484px;
+    overflow: hidden;
+    box-sizing: border-box;
+    /*border: 1px solid #e0e0e0;*/
+}
+.recommend{
+    display: flex;
+    overflow: hidden;
+}
+.recommend_left,.recommend_right{
+    float: left;
+}
+.recommend_left{
+    width: 1000px;
+}
+.recommend_left .title_more{
+    margin-right: 50px;
+}
+.recommend_right{
+    width: 200px;
+}
+.Rleft_cont{
+    display: flex;
+    overflow: hidden;
+}
+.Rleft_cont_left,.Rleft_cont_right{
+    float: left;
+    width: 50%;
+}
+.Rleft_cont_right{
+    display: flex;
+    overflow: hidden;
+}
+.Rleft_cont_right li div a,.Rleft_cont_right li div {
+    height: 110px;
+    width: 200px;
+}
+.Rleft_cont_right li{
+    width: 50%;
+    float: left;
+    padding-bottom: 10px;
+}
+.Rleft_cont_left div,.Rleft_cont_left a{
+    height: 260px;
+    width: 450px;
+}
+.recommend p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
+    height: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+.recommend_right p{
+    text-align: center;
+}
+.Rleft_cont_left p{
+    width: 450px;
+}
+.video_left p{
+    margin-top: 10px;
+    font-weight: bold;
+    width: 866px;
+    font-size: 20px;
+}
+.huiben ul{
+    width: 100%;
+}
+.huiben li{
+    width: 25%;
+    float: left;
+    padding-bottom: 20px;
+}
+.huiben li a,.huiben li div{
+    height: 110px;
+    width: 200px;
+}
+.Rright_cont li div,.Rright_cont li div a{
+    height: 110px;
+    width: 200px;
+}
+.Rright_cont li{
+    padding-bottom: 20px;
+}
+.audio_ul {
+    display: flex;
+    overflow: hidden;
+}
+.audio_ul ul{
+    width: 100%;
+}
+.audio_ul li {
+    width: 320px;
+    float: left;
+    padding-bottom: 20px;
+}
+.audio_ul li:nth-of-type(4),.audio_ul li:nth-of-type(8),.audio_ul li:nth-of-type(12){
+    width: 240px;
+}
+.audio_ul li a,.audio_ul li div {
+    height: 130px;
+    width: 240px;
+}
+.audio_ul li .imgcover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.audio_ul p {
+    text-align: center;
+    width: 240px;
+    padding: 5px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#remenwenzhang li {
+    width: 214px;
+}
+#remenwenzhang li:nth-of-type(6) {
+    width: 130px;
+}
+#remenwenzhang li a {
+    width: 130px;
+    height: 180px;
+}
+#remenwenzhang li p {
+    width: 130px;
+}
+.video_title {
+    padding-top: 0;
+}
+
+.duiHui_ul li {
+    text-align: left;
+    box-sizing: border-box;
+    width: 308px;
+    float: left;
+    margin-bottom: 20px;
+}
+.duiHui_ul li:nth-of-type(4),.duiHui_ul li:nth-of-type(8),.duiHui_ul li:nth-of-type(12),.duiHui_ul li:nth-of-type(16) {
+    width: 276px;
+}
+.duiHui_ul>li>div {
+    padding-bottom: 10px;
+    overflow: hidden;
+    width: 260px;
+}
+.duiHui_img, .duiHui_img a {
+    width: 260px;
+    height: 150px;
+}
+.duiHui_ul li p {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 10px 0 0;
+    height: 30px;
+    line-height: 30px;
+    margin: 1px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.duiHui_ul li span {
+    color: #888888;
+	padding: 0 10px 0 0;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    
+    white-space:nowrap;text-overflow:ellipsis;overflow:hidden;
+    
+}
+.duiHui{
+    display: flex;
+    min-height: 242px;
+    overflow: hidden;
+}
+
+
+
+
+
+
