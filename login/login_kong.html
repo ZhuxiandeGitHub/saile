@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1"><!--声明当前页面用chrome内核来渲染-->
+    <meta name="keywords" content="赛乐，少年先锋报" /><!--关键字-->
+    <meta name="description" content="赛乐网" /><!--网站描述-->
+    <meta http-equiv="window-target" content="_top"/><!--强制页面在当前窗口以独立页面显示,防止页面被引用-->
+    <link rel="icon" type="../image/x-icon" href="../common/img/icon-title.png"><!--标题icon-->
+    <title>赛乐网</title>
+    <script>
+        var hrefs = decodeURI(window.location.href);
+        var ToInex = hrefs.split("token=")[1];
+        var ToTranslate = hrefs.split("?")[1];
+        if(ToInex==undefined){
+            window.location.href = "../login/translate.html?"+ToTranslate;
+        }else {
+            localStorage.setItem("saile_token",ToInex);
+            window.location.href = "../index/index.html";
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
